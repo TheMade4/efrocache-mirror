@@ -76,6 +76,6 @@ for i, (url, path, file_name) in enumerate(download_list):
 	if not os.path.exists(full_path):
 		download(url, full_path, i, n)
 		continue
-	print('is exists', full_path)
+	#print('is exists', full_path)
 
 
