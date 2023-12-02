@@ -13,13 +13,13 @@ def background(f):
 
 
 
-efrocachemap_url = 'https://raw.githubusercontent.com/TheMade4/ballistica/master/.efrocachemap'
+efrocachemap_url = 'https://raw.githubusercontent.com/efroemling/ballistica/master/.efrocachemap'
 
 cache_map = requests.get(efrocachemap_url).json()
 cache_map_hashes = list(cache_map.values())
 
 base_url = 'https://files.ballistica.net/cache/ba1'
-base_path = os.path.join(os.getcwd(), 'cache')
+base_path = os.path.join(os.getcwd(), 'ba1')
 
 
 def get_hash(data):
