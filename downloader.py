@@ -1,4 +1,5 @@
 import os
+import time
 import hashlib
 import subprocess
 import asyncio
@@ -79,3 +80,5 @@ for i, (url, path, file_name) in enumerate(download_list):
 	#print('is exists', full_path)
 
 
+with open("update_time.txt", "w") as f:
+	f.write(str(time.time()))
